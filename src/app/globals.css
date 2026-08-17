@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -12,15 +12,46 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-block: 0.67em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block: 0.83em;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-block: 1em;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-block: 1.33em;
+  }
+
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin-block: 1.67em;
+  }
+
+  h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin-block: 2.33em;
+  }
 }
