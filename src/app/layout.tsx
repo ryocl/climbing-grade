@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/siteUrl";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "クライミンググレード表",
   description: "クライミングのグレードの解説です",
 };
@@ -27,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
