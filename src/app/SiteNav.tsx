@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { href: "/", label: "グレード表" },
   { href: "/perceived-grade", label: "グレード(体感)" },
+  { href: "/glossary", label: "用語辞典" },
 ];
 
 export function SiteNav() {
