@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useId, useState } from "react";
 import type { MoveTerm } from "./moveData";
 
@@ -47,6 +48,21 @@ export function MoveSearch({ moves }: { moves: MoveTerm[] }) {
             <div className="px-4 py-3 text-sm text-zinc-800">
               {move.description}
             </div>
+            {move.images && move.images.length > 0 && (
+              <ul className="flex flex-wrap gap-2 px-4 pb-3">
+                {move.images.map((image) => (
+                  <li key={image.src}>
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className="h-auto w-full max-w-60 rounded-md"
+                    />
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

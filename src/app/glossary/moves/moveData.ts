@@ -1,8 +1,16 @@
+export interface MoveImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 export interface MoveTerm {
   id: string;
   name: string;
   kana: string;
   description: string;
+  images?: MoveImage[];
 }
 
 export const moveTable: MoveTerm[] = [
@@ -23,18 +31,34 @@ export const moveTable: MoveTerm[] = [
     name: "ヒール(ヒールフック)",
     kana: "ひーるふっく",
     description: "かかとをホールドに引っ掛けて体を引きつけたり、回転を抑えたりするムーブ。",
+    images: [
+      {
+        src: "/images/move/heel-hook/heel-hook-1.png",
+        alt: "赤いホールドにかかとを掛けて体を引きつけるクライマー",
+        width: 300,
+        height: 360,
+      },
+    ],
   },
   {
     id: "toe-hook",
     name: "トゥー(トゥフック)",
     kana: "とぅふっく",
     description: "つま先の甲側をホールドに引っ掛けて体の振られを抑えるムーブ。",
+    images: [
+      {
+        src: "/images/move/toe-hook/toe-hook-1.png",
+        alt: "赤いホールドにつま先の甲側を引っ掛けて体を支えるクライマーと、その足元の拡大図",
+        width: 300,
+        height: 225,
+      },
+    ],
   },
   {
     id: "match",
     name: "マッチ",
     kana: "まっち",
-    description: "同じホールドに両手(または両足)を乗せること。",
+    description: "同じホールドに両手で掴むこと。",
   },
   {
     id: "kyon",

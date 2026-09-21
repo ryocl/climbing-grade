@@ -62,12 +62,12 @@ export default function RootLayout({
           <footer className="w-full border-t border-zinc-200 bg-white">
             <div className="mx-auto flex w-full max-w-250 justify-center px-4 py-4">
               <a
-                href="https://x.com/ryo_cl_lab"
+                href="https://x.com/ryo_clim"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-zinc-600 hover:text-zinc-900 hover:underline"
               >
-                X (@ryo_cl_lab)
+                X (@ryo_clim)
               </a>
             </div>
           </footer>
