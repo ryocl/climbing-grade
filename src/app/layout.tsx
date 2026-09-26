@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import Link from "next/link";
 import { SiteNav } from "./SiteNav";
+import { SITE_DESCRIPTION, SITE_NAME, THEME_COLOR } from "@/lib/siteConfig";
 import { SITE_URL } from "@/lib/siteUrl";
 import "./globals.css";
 
@@ -20,8 +21,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "クライミング グレード早見帳",
-  description: "クライミングのグレードの解説です",
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  icons: {
+    icon: "/images/icon/favicon.png",
+    apple: "/images/icon/apple-icon.png",
+  },
+  appleWebApp: {
+    title: SITE_NAME,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: THEME_COLOR,
 };
 
 export default function RootLayout({
@@ -49,7 +61,7 @@ export default function RootLayout({
           <nav className="w-full border-b border-sky-400 bg-sky-300">
             <div className="mx-auto w-full max-w-250 px-4 pt-3">
               <Link href="/" className="text-lg font-bold text-zinc-900">
-                クライミング グレード早見帳
+                {SITE_NAME}
               </Link>
             </div>
             <SiteNav />
