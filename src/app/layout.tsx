@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
+  // Setting `icons` disables file-based icon.png / apple-icon.png entirely,
+  // so every icon must be declared here.
   icons: {
     icon: "/images/icon/favicon.png",
     apple: "/images/icon/apple-icon.png",
