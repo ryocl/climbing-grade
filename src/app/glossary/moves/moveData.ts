@@ -59,6 +59,14 @@ export const moveTable: MoveTerm[] = [
     name: "マッチ",
     kana: "まっち",
     description: "同じホールドに両手で掴むこと。",
+    images: [
+      {
+        src: "/images/move/match/match-1.png",
+        alt: "赤い大きなホールドを両手で掴むクライマー",
+        width: 300,
+        height: 360,
+      },
+    ],
   },
   {
     id: "kyon",
