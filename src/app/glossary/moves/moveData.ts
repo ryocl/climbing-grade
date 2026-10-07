@@ -19,12 +19,28 @@ export const moveTable: MoveTerm[] = [
     name: "フラッギング",
     kana: "ふらっぎんぐ",
     description: "片足をホールドに乗せず反対側に伸ばし、バランスを取るムーブ。",
+    images: [
+      {
+        src: "/images/move/flagging/flagging-1.png",
+        alt: "黄色いホールドを右手で掴み、片足をホールドに乗せずに横へ伸ばしてバランスを取るクライマー",
+        width: 300,
+        height: 225,
+      },
+    ],
   },
   {
     id: "diagonal",
     name: "ダイアゴナル",
     kana: "だいあごなる",
     description: "対角線上の手足(右手と左足など)に重心を置いて体を安定させる基本姿勢。",
+    images: [
+      {
+        src: "/images/move/diagonal/diagonal-1.png",
+        alt: "右手で上の緑のホールドを掴み、左足を対角線上の緑のホールドに乗せて体を安定させるクライマー",
+        width: 300,
+        height: 360,
+      },
+    ],
   },
   {
     id: "heel-hook",
@@ -73,6 +89,14 @@ export const moveTable: MoveTerm[] = [
     name: "キョン",
     kana: "きょん",
     description: "足を突っ張るように使い、体を押し出す動き。主にカチや壁の隅で使う。",
+    images: [
+      {
+        src: "/images/move/drop-knee/drop-knee-1.png",
+        alt: "赤いホールドに乗せた足の膝を内側に倒し込み、体を壁に引き寄せるクライマー",
+        width: 300,
+        height: 225,
+      },
+    ],
   },
   {
     id: "lunge",
