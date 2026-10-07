@@ -85,6 +85,16 @@ export const quoteList: ClimbingQuote[] = [
     text: "登るという行為そのものが、すでに一つの答えだ。",
     author: "作者不詳",
   },
+  {
+    id: "admin-gaba",
+    text: "誰だよ！ガバって言ったやつ！",
+    author: "サイト管理者",
+  },
+  {
+    id: "admin-nothing",
+    text: "(ホールドを触って)　なんもなかった",
+    author: "サイト管理者",
+  },
 ];
 
 export function getRandomQuote(excludeId?: string): ClimbingQuote {
